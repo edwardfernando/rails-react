@@ -5,4 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-10.times { Item.create!(name: "Item", description: "I am a description.") }
+10.times { |idx|
+  Item.create!(name: "Item", description: "I am a description - #{idx}") 
+  
+}
